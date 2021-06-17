@@ -17,3 +17,5 @@ git status will now show the files is renamed
 
 git has a command to do this in one step..
 git mv filename1 filename2
+
+we should not upload all files..eg binary files nor log files
