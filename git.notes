@@ -1,0 +1,19 @@
+To remove files with unix commands remember it is a 2 step process.. after removing the file from the working directory
+with the rm command ..it is still in the staging area and will show in red that the file is deleted
+if we run a git status .. we also have to remove it from the staging area.
+so we run git add file name to add the deletion to the staging area.
+We then have to commit the change soo
+we do ... git commit -m "Remove file2.txt"
+The command 'git rm filename' removes whatever file from both the staging and working area
+
+To rename or move files we can use the Unix MV command
+eg mv file1.txt main.js
+check with git status and we see the unstaged changes to the files
+we then have to add the files to the staging area
+git add file1.txt
+then
+git add main.js
+git status will now show the files is renamed
+
+git has a command to do this in one step..
+git mv filename1 filename2
